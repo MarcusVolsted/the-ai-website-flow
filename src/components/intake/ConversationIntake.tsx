@@ -821,16 +821,16 @@ export function ConversationIntake({ embedded = false }: { embedded?: boolean } 
                   className="text-center mb-8"
                 >
                   <span className="text-xs uppercase tracking-[0.2em] text-brand font-medium">
-                    Get your free design
+                    Free preview
                   </span>
                   <h2 className="font-[family-name:var(--font-plus-jakarta)] text-3xl sm:text-4xl md:text-5xl font-bold tracking-[-0.03em] mt-4 mb-5">
-                    Get a <span className="text-brand">free</span> website design.
+                    See your website <span className="text-brand">for free</span>.
                     <br />
-                    <span className="text-text-secondary">No strings attached.</span>
+                    <span className="text-text-secondary">Before you pay a thing.</span>
                   </h2>
                   <p className="text-text-secondary max-w-lg mx-auto">
-                    Tell us about your business and we will create a custom design
-                    for you within 1-3 days, completely free. No commitment at this stage.
+                    Tell us about your business and we will create a free mockup of
+                    your website within 1-3 days. No commitment, no payment info needed.
                     Love it? We build and launch it as your subscription starts.
                     <br />
                     <span className="text-sm text-text-muted">
@@ -1094,20 +1094,20 @@ export function ConversationIntake({ embedded = false }: { embedded?: boolean } 
               >
                 {embedded ? (
                   <>
-                    Get a <span className="text-brand">free</span> website design.
+                    See your website <span className="text-brand">for free</span>.
                     <br />
-                    <span className="text-text-secondary">No strings attached.</span>
+                    <span className="text-text-secondary">Before you pay a thing.</span>
                   </>
                 ) : (
-                  <>Get a <span className="text-brand">free</span> website design.</>
+                  <>See your website <span className="text-brand">for free</span>.</>
                 )}
               </h1>
               <p className={cn(
                 "leading-relaxed text-[15px]",
                 embedded ? "text-text-secondary max-w-lg" : "text-text-secondary max-w-md",
               )}>
-                Tell us about your business and we will create a custom design
-                for you within 1-3 days, completely free. No commitment at this stage.
+                Tell us about your business and we will create a free mockup of
+                your website within 1-3 days. No commitment, no payment info needed.
                 Love it? We build and launch it as your subscription starts.
                 <br />
                 <span className={cn("text-sm", embedded ? "text-text-muted" : "text-text-muted")}>
