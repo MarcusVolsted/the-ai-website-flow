@@ -44,6 +44,16 @@ export function PainPoints() {
           </h2>
         </motion.div>
 
+        {/* Column headers */}
+        <div className="hidden sm:grid grid-cols-2 gap-8 mb-4 px-6">
+          <span className="text-xs uppercase tracking-[0.15em] text-red-400/80 font-medium">
+            Traditional agencies
+          </span>
+          <span className="text-xs uppercase tracking-[0.15em] text-emerald-400/80 font-medium">
+            With us
+          </span>
+        </div>
+
         <div className="space-y-4">
           {pains.map((item, i) => (
             <motion.div
@@ -60,22 +70,32 @@ export function PainPoints() {
             >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8">
                 {/* Pain */}
-                <div className="flex gap-3">
-                  <div className="shrink-0 mt-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-red-500/10">
-                    <X className="h-3 w-3 text-red-400" />
+                <div>
+                  <span className="sm:hidden text-[10px] uppercase tracking-[0.15em] text-red-400/80 font-medium mb-2 block">
+                    Traditional agencies
+                  </span>
+                  <div className="flex gap-3">
+                    <div className="shrink-0 mt-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-red-500/10">
+                      <X className="h-3 w-3 text-red-400" />
+                    </div>
+                    <p className="text-sm text-text-secondary leading-relaxed">
+                      {item.pain}
+                    </p>
                   </div>
-                  <p className="text-sm text-text-secondary leading-relaxed">
-                    {item.pain}
-                  </p>
                 </div>
                 {/* Fix */}
-                <div className="flex gap-3">
-                  <div className="shrink-0 mt-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500/10">
-                    <Check className="h-3 w-3 text-emerald-400" />
+                <div>
+                  <span className="sm:hidden text-[10px] uppercase tracking-[0.15em] text-emerald-400/80 font-medium mb-2 block">
+                    With us
+                  </span>
+                  <div className="flex gap-3">
+                    <div className="shrink-0 mt-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500/10">
+                      <Check className="h-3 w-3 text-emerald-400" />
+                    </div>
+                    <p className="text-sm text-text-primary leading-relaxed font-medium">
+                      {item.fix}
+                    </p>
                   </div>
-                  <p className="text-sm text-text-primary leading-relaxed font-medium">
-                    {item.fix}
-                  </p>
                 </div>
               </div>
             </motion.div>

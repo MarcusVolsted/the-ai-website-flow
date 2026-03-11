@@ -21,8 +21,8 @@ export default function Home() {
       <main>
         <Hero />
         <TrustBar />
-        <PainPoints />
         <IntakeSection />
+        <PainPoints />
         <WhatWeDo />
         <HowItWorks />
         <WhyUs />
