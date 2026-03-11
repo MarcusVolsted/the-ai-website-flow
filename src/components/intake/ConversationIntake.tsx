@@ -821,17 +821,17 @@ export function ConversationIntake({ embedded = false }: { embedded?: boolean } 
                   className="text-center mb-8"
                 >
                   <span className="text-xs uppercase tracking-[0.2em] text-brand font-medium">
-                    Free preview
+                    Free mockup
                   </span>
                   <h2 className="font-[family-name:var(--font-plus-jakarta)] text-3xl sm:text-4xl md:text-5xl font-bold tracking-[-0.03em] mt-4 mb-5">
-                    See your website <span className="text-brand">for free</span>.
+                    Get a <span className="text-brand">free</span> mockup.
                     <br />
-                    <span className="text-text-secondary">Before you pay a thing.</span>
+                    <span className="text-text-secondary">Zero risk, zero commitment.</span>
                   </h2>
                   <p className="text-text-secondary max-w-lg mx-auto">
                     Tell us about your business and we will create a free mockup of
-                    your website within 1-3 days. No commitment, no payment info needed.
-                    Love it? We build and launch it as your subscription starts.
+                    your website within 1-3 days. No payment info, no strings attached.
+                    Love it? We build the full site and your subscription starts.
                     <br />
                     <span className="text-sm text-text-muted">
                       No sign-up required. Takes about 2 minutes.
@@ -1094,12 +1094,12 @@ export function ConversationIntake({ embedded = false }: { embedded?: boolean } 
               >
                 {embedded ? (
                   <>
-                    See your website <span className="text-brand">for free</span>.
+                    Get a <span className="text-brand">free</span> mockup.
                     <br />
-                    <span className="text-text-secondary">Before you pay a thing.</span>
+                    <span className="text-text-secondary">Zero risk, zero commitment.</span>
                   </>
                 ) : (
-                  <>See your website <span className="text-brand">for free</span>.</>
+                  <>Get a <span className="text-brand">free</span> mockup.</>
                 )}
               </h1>
               <p className={cn(
@@ -1107,8 +1107,8 @@ export function ConversationIntake({ embedded = false }: { embedded?: boolean } 
                 embedded ? "text-text-secondary max-w-lg" : "text-text-secondary max-w-md",
               )}>
                 Tell us about your business and we will create a free mockup of
-                your website within 1-3 days. No commitment, no payment info needed.
-                Love it? We build and launch it as your subscription starts.
+                your website within 1-3 days. No payment info, no strings attached.
+                Love it? We build the full site and your subscription starts.
                 <br />
                 <span className={cn("text-sm", embedded ? "text-text-muted" : "text-text-muted")}>
                   No sign-up required. Takes about 2 minutes.

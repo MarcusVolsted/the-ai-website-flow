@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { Navbar } from "@/components/landing/Navbar";
 import { Hero } from "@/components/landing/Hero";
 import { TrustBar } from "@/components/landing/TrustBar";
+import { PainPoints } from "@/components/landing/PainPoints";
 import { IntakeSection } from "@/components/landing/IntakeSection";
 import { WhatWeDo } from "@/components/landing/WhatWeDo";
 import { HowItWorks } from "@/components/landing/HowItWorks";
@@ -20,6 +21,7 @@ export default function Home() {
       <main>
         <Hero />
         <TrustBar />
+        <PainPoints />
         <IntakeSection />
         <WhatWeDo />
         <HowItWorks />
