@@ -10,6 +10,7 @@ const plans = [
     name: "Growth",
     badge: "Most Popular",
     price: "$399",
+    recommended: "Recommended for small businesses, startups, and personal brands.",
     description:
       "Best for most businesses that want continuous improvements and updates to their website.",
     features: [
@@ -35,6 +36,7 @@ const plans = [
     name: "Pro",
     badge: null,
     price: "$799",
+    recommended: "Recommended for agencies, e-commerce, and high-traffic sites.",
     description:
       "For businesses that rely heavily on their website and need faster execution.",
     features: [
@@ -120,9 +122,16 @@ export function Pricing() {
                   <span className="text-text-secondary text-base font-medium">/mo</span>
                 </div>
 
-                <p className="text-sm text-text-secondary leading-relaxed mb-6">
+                <p className="text-sm text-text-secondary leading-relaxed mb-4">
                   {plan.description}
                 </p>
+
+                {/* Recommended for */}
+                <div className="mb-6 rounded-lg bg-brand/[0.05] border border-brand/10 px-4 py-2.5">
+                  <p className="text-xs text-brand font-medium">
+                    {plan.recommended}
+                  </p>
+                </div>
 
                 {/* Value comparison */}
                 <div className="mb-8 rounded-xl border border-surface-border/50 bg-surface-floating/50 px-4 py-3 flex items-center gap-3">
