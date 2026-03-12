@@ -34,7 +34,7 @@ export function Navbar() {
           className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
         >
           <Image
-            src="/logos/full-logo.svg"
+            src={theme === "dark" ? "/logos/full-logo.svg" : "/logos/full-logo-dark.svg"}
             alt="Weblio"
             width={140}
             height={38}

@@ -1,8 +1,7 @@
 const footerLinks = [
-  { label: "How it works", href: "#how-it-works" },
-  { label: "Pricing", href: "#pricing" },
   { label: "FAQ", href: "#faq" },
   { label: "Get started", href: "#get-started" },
+  { label: "Privacy Policy", href: "/privacy" },
 ];
 
 export function Footer() {
@@ -10,8 +9,8 @@ export function Footer() {
     <footer className="border-t border-surface-border/50 py-12 px-6">
       <div className="max-w-5xl mx-auto flex flex-col gap-6">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          <span className="font-[family-name:var(--font-plus-jakarta)] text-xs font-bold tracking-[-0.02em] text-text-muted">
-            Studio
+          <span className="font-[family-name:var(--font-plus-jakarta)] text-xs font-bold tracking-[-0.02em] text-text-secondary">
+            Weblio
           </span>
           <nav className="flex items-center gap-6">
             {footerLinks.map((link) => (
@@ -27,7 +26,7 @@ export function Footer() {
         </div>
         <div className="text-center sm:text-left">
           <p className="text-[11px] text-text-muted">
-            &copy; {new Date().getFullYear()} All rights reserved.
+            &copy; {new Date().getFullYear()} Weblio. All rights reserved.
           </p>
         </div>
       </div>
