@@ -36,7 +36,7 @@ const plans = [
     name: "Pro",
     badge: null,
     price: "$799",
-    recommended: "Recommended for agencies, e-commerce, and high-traffic sites.",
+    recommended: "Recommended for agencies, growing brands, and high-traffic sites.",
     description:
       "For businesses that rely heavily on their website and need faster execution.",
     features: [
@@ -214,24 +214,21 @@ export function Pricing() {
               >
                 <div className="rounded-xl border border-surface-border/50 bg-surface-floating/30 p-4 space-y-3">
                   <p className="text-xs text-text-secondary leading-relaxed">
-                    Your subscription covers design, content, and layout changes to your
-                    website. This includes new pages, copy updates, image swaps, style
-                    changes, and anything visual. We also build and maintain functional
-                    elements like contact forms, newsletter sign-ups, and basic
-                    integrations as part of your plan.
+                    <span className="font-medium text-text-primary">Growth</span> covers
+                    design, content, and layout work: new pages, copy updates, image swaps,
+                    style changes, mobile optimization, and functional elements like contact
+                    forms and newsletter sign-ups.
+                  </p>
+                  <p className="text-xs text-text-secondary leading-relaxed">
+                    <span className="font-medium text-text-primary">Pro</span> includes
+                    everything in Growth plus integrations, advanced development tasks, and
+                    faster turnaround with two active requests running at the same time.
                   </p>
                   <p className="text-xs text-text-secondary leading-relaxed">
                     <span className="font-medium text-text-primary">Highly technical builds</span> like
-                    custom price calculators, booking systems, dashboards, or complex API
-                    integrations go beyond the standard subscription. We absolutely build
-                    these, but they are scoped and quoted as separate add-on packages so
-                    you only pay for what you need.
-                  </p>
-                  <p className="text-xs text-text-secondary leading-relaxed">
-                    <span className="font-medium text-text-primary">E-commerce sites?</span> We
-                    build online stores too. Because e-commerce has different requirements and
-                    scope, we will reach out personally after you sign up to discuss your
-                    needs and put together the right package for you.
+                    custom calculators, booking systems, or dashboards go beyond either plan.
+                    We do build these as separate add-on packages, scoped and quoted so you
+                    only pay for what you need.
                   </p>
                   <p className="text-xs text-text-muted">
                     Not sure if something is included? Just ask. We will always be transparent

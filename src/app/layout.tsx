@@ -16,9 +16,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Premium Web Design on Subscription | Studio",
+  title: "Premium Web Design on Subscription | Weblio",
   description:
     "Custom websites that convert, delivered on a flat monthly subscription. Unlimited revisions, no upfront cost, no lock-in.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

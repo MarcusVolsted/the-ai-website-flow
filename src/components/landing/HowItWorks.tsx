@@ -71,9 +71,6 @@ export function HowItWorks() {
         </motion.div>
 
         <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
-          {/* Connecting line (desktop only) */}
-          <div className="hidden lg:block absolute top-16 left-[12.5%] right-[12.5%] h-[1px] bg-gradient-to-r from-transparent via-surface-border to-transparent" />
-
           {steps.map((step, i) => (
             <motion.div
               key={step.number}

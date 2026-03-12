@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const faqs = [
@@ -25,11 +25,6 @@ const faqs = [
     question: "What is NOT included in the subscription?",
     answer:
       "Highly technical builds like custom calculators, booking systems, dashboards, or complex API integrations fall outside the standard subscription. We do build these, but they are scoped and quoted as separate add-on projects. If you are unsure whether something is included, just ask.",
-  },
-  {
-    question: "Do you build e-commerce sites?",
-    answer:
-      "Yes. Because e-commerce projects have different requirements and scope, we will reach out personally after you sign up to discuss your needs and put together the right package for you.",
   },
   {
     question: "How fast do I get my website?",
@@ -103,33 +98,36 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="relative py-16 px-6">
+    <section id="faq" className="relative py-24 px-6">
       <div className="max-w-2xl mx-auto">
-        {/* Collapsed: single button */}
+        {/* Toggle button with headline */}
         <button
           type="button"
           onClick={() => setExpanded(!expanded)}
           className={cn(
-            "w-full flex items-center justify-center gap-3 py-4 rounded-2xl border transition-colors duration-200",
+            "w-full flex flex-col items-center gap-2 py-6 rounded-2xl border transition-colors duration-200",
             "focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2",
             expanded
-              ? "border-brand/20 bg-brand/[0.04] text-text-primary"
-              : "border-surface-border/50 bg-surface-elevated/30 text-text-secondary hover:border-surface-border hover:text-text-primary",
+              ? "border-brand/20 bg-brand/[0.04]"
+              : "border-surface-border/50 bg-surface-elevated/30 hover:border-surface-border",
           )}
         >
-          <ChevronLeft
+          <ChevronDown
             className={cn(
               "h-4 w-4 text-text-muted transition-transform duration-200",
-              expanded && "-rotate-90",
+              expanded && "rotate-180",
             )}
           />
-          <span className="text-sm font-medium">
-            {expanded ? "Hide FAQ" : "Frequently asked questions"}
+          <span className="font-[family-name:var(--font-plus-jakarta)] text-lg font-bold tracking-[-0.02em] text-text-primary">
+            FAQ
           </span>
-          <ChevronRight
+          <span className="text-xs text-text-muted">
+            {expanded ? "Hide questions" : "Frequently asked questions"}
+          </span>
+          <ChevronDown
             className={cn(
               "h-4 w-4 text-text-muted transition-transform duration-200",
-              expanded && "rotate-90",
+              expanded && "rotate-180",
             )}
           />
         </button>

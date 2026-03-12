@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 import { useTheme } from "@/components/ThemeProvider";
@@ -18,18 +19,31 @@ export function Navbar() {
   return (
     <nav
       className={cn(
-        "fixed top-0 left-0 right-0 z-40 border-b transition-[background-color,border-color,backdrop-filter] duration-300",
+        "fixed top-0 left-0 right-0 z-40 border-b transition-[background-color,border-color,backdrop-filter,height] duration-300",
         scrolled
           ? "bg-surface-base/80 backdrop-blur-xl border-surface-border/50"
           : "bg-transparent border-transparent",
       )}
     >
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className={cn(
+        "max-w-6xl mx-auto px-6 flex items-center justify-between transition-[height] duration-300",
+        scrolled ? "h-14" : "h-20",
+      )}>
         <a
           href="#"
-          className="font-[family-name:var(--font-plus-jakarta)] text-sm font-bold tracking-[-0.02em] text-text-primary hover:text-brand transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+          className="focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
         >
-          Studio
+          <Image
+            src="/logos/full-logo.svg"
+            alt="Weblio"
+            width={140}
+            height={38}
+            className={cn(
+              "w-auto transition-[height] duration-300",
+              scrolled ? "h-6" : "h-8",
+            )}
+            priority
+          />
         </a>
 
         <div className="hidden sm:flex items-center gap-8">
